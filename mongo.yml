@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongo-deployment
+  labels:
+    app: mongo
+spec:
+  template:
+    metadata:
+      name: mongo
+      labels:
+        app: mongo
+    spec:
+      containers: 
+      - name: mongodb
+        image: mongo:5.0
+        ports:
+        - containerPort: 27017
