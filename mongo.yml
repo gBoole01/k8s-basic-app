@@ -5,6 +5,10 @@ metadata:
   labels:
     app: mongo
 spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongo
   template:
     metadata:
       name: mongo
