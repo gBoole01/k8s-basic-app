@@ -5,23 +5,23 @@
 Register ConfigMap
 
 ```bash
-kubectl apply -f mongo-config.yml
+kubectl apply -f environments/dev/mongo-config.yml
 ```
 
 Register Secret
 
 ```bash
-kubectl apply -f mongo-secret.yml
+kubectl apply -f environments/dev/mongo-secret.yml
 ```
 
 Register Deployment and Service
 
 ```bash
-kubectl apply -f mongo.yml
+kubectl apply -f environments/dev/mongo.yml
 ```
 
 ```bash
-kubectl apply -f webapp.yml
+kubectl apply -f environments/dev/webapp.yml
 ```
 
 List all
